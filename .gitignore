@@ -1,1 +1,25 @@
-./backend/.env
+# Environment Variables
+.env
+*.env
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+
+# Node & Frontend
+node_modules/
+dist/
+.output/
+.oxlintrc.json
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
