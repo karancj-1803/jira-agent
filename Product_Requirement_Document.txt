@@ -1,0 +1,23 @@
+Role: Think you are a Senior Product Manager. I need you to plan a product developement plan.
+Content : I need to develop a React FastAPI Full Stack application which automates the SDLC worflow in my project. I need to build agent for automating worflow for SDLC. There are 7 agents. Jira Ingestion agent, Jira Analysis Agent, Code Analysis Agent, Code Developement agent, Code Review Agent, STP Preparation Agent, STP Execution Agent and finally a Jira Closure Agent.
+The user will provide the jira ticket id and then jira ingestion agent will retrieve the ticket details using Jira API.
+Then the retrieved data sent to Jira Analysis Agent.
+Jira Analysis Agent will analyze the ticket and generate a detailed analysis report.
+Then the analysis report is sent to Code Analysis Agent.
+This agent will analyze the code related to the ticket and decides whether it needs a code change or not.
+From here, the worflow splits into two parts.
+One side will be Code development and other side will be STP preparation.
+Code development will work on conditional basis but STP preparation will be done on continuous basis.
+After the code developement, then code review agent will review the code.
+Once the code review agent and STP preparation agent both are completed then the workflow will converge.
+Then the STP execution agent will execute the STP.
+After the STP execution agent completes, it waits for the L3 to give approval and then code sent to UAT.
+Then jira closure agent will close the ticket.
+For v1, we not need to implement authentication, authorization, database, historical data. We can implement what I have given. If you have any suggestions, we can do that.
+
+TechStack:
+React + Tailwind CSS
+FastAPI
+Langgragh
+
+Response: I need you to prepare a implementation plan for doing this project.
